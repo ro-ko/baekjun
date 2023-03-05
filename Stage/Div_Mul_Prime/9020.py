@@ -23,5 +23,3 @@ for _ in range(T):
         else:
             a -= 1
             b += 1
-        
-        
