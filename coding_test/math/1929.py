@@ -1,13 +1,14 @@
 from math import sqrt
 
-num = list(map(int,input().split()))
+M ,N = map(int,input().split())
 
-for i in range(num[0],num[1]+1):
+for num in range(M,N+1):
+    if num == 1:
+        continue
     prime =True
-    for j in range(2, int(sqrt(i))+1):
-        if i%j==0:
+    for i in range(2, int(sqrt(num))+1):
+        if num%i==0:
             prime = False
             break
     if prime==True:
-        print(i)
-    else: continue
+        print(num)
